@@ -43,7 +43,7 @@ export default function RegisterView() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="form-field" autoComplete="off">
+    <form onSubmit={handleSubmit} className="signup" autoComplete="off">
       <TextField
         label="Name"
         variant="outlined"
@@ -78,7 +78,13 @@ export default function RegisterView() {
       />
 
       {!isLoading && (
-        <Button variant="contained" color="primary" size="large" type="submit">
+        <Button
+          className="buttonsigh"
+          variant="contained"
+          color="primary"
+          size="large"
+          type="submit"
+        >
           Sign up
         </Button>
       )}

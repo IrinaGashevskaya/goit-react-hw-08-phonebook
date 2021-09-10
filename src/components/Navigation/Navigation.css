@@ -1,12 +1,27 @@
-.link {
+/*.link {
   font-size: 18px;
   color: #2a363b;
 }
 .activeLink {
   composes: link;
   color: #2196f3;
-}
+}*/
 .navigation {
-  margin-top: 40px;
-  width: 50%;
+  display: flex;
+  margin-right: 40px;
+  justify-content: flex-start;
+}
+.link {
+  padding: 10px;
+  font-size: 18px;
+  color: white;
+  margin-left: 40px;
+  border: 1px solid;
+  border-radius: 25px;
+  background-color: cornflowerblue;
+}
+.activeLink {
+  composes: link;
+  color: #2196f3;
+  background-color: white;
 }

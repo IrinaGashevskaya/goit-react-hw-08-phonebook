@@ -1,11 +1,16 @@
 .link {
+  padding: 10px;
   font-size: 18px;
-  color: #2a363b;
+  color: white;
   margin-left: 40px;
+  border: 1px solid;
+  border-radius: 25px;
+  background-color: cornflowerblue;
 }
 .activeLink {
   composes: link;
   color: #2196f3;
+  background-color: white;
 }
 .authNav {
   display: flex;

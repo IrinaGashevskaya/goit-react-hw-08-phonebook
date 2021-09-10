@@ -4,3 +4,7 @@
 .title {
   margin-left: 50px;
 }
+.phonebook {
+  min-width: 480px;
+  width: 50%;
+}

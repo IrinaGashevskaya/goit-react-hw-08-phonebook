@@ -12,7 +12,7 @@ export default function ContactsView() {
   useEffect(() => dispatch(contactsOperations.fetchContacts()), [dispatch]);
 
   return (
-    <div>
+    <div className="phonebook">
       <h1 className="header">Phonebook</h1>
       <ContactForm />
       <h2 className="title">Contacts</h2>

@@ -41,7 +41,7 @@ export default function LoginView() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="form-field" autoComplete="off">
+    <form onSubmit={handleSubmit} className="logForm" autoComplete="off">
       <TextField
         label="Email"
         variant="outlined"

@@ -1,5 +1,5 @@
 import { lazy, Suspense, useEffect } from "react";
-import { Switch, Route } from "react-router-dom";
+import { Switch } from "react-router-dom";
 import { useDispatch } from "react-redux";
 
 import PrivateRoute from "./components/PrivateRoute";
@@ -24,10 +24,6 @@ const ContactsView = lazy(() =>
   import("./views/ContactsView" /* webpackChunkName: "contacts-view" */)
 );
 
-const NotFoundView = lazy(() =>
-  import("./views/NotFoundView" /* webpackChunkName: "not-found-view" */)
-);
-
 function App() {
   const dispatch = useDispatch();
 
@@ -36,9 +32,9 @@ function App() {
   }, [dispatch]);
 
   return (
-    <div className="main">
+    <>
       <AppBar />
-
+      <hr></hr>
       <Suspense fallback={<LoaderApp />}>
         <Switch>
           <PublicRoute path="/" exact>
@@ -56,13 +52,9 @@ function App() {
           <PrivateRoute path="/contacts" redirectTo="/login">
             <ContactsView />
           </PrivateRoute>
-
-          <Route>
-            <NotFoundView />
-          </Route>
         </Switch>
       </Suspense>
-    </div>
+    </>
   );
 }
 
