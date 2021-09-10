@@ -1,0 +1,14 @@
+.link {
+  font-size: 18px;
+  color: #2a363b;
+  margin-left: 40px;
+}
+.activeLink {
+  composes: link;
+  color: #2196f3;
+}
+.authNav {
+  display: flex;
+  margin-right: 40px;
+  justify-content: flex-end;
+}
