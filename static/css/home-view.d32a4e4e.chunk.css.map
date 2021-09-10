@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://src/views/HomeView/HomeView.css"],"names":[],"mappings":"AAAA,SACE,gBAAiB,CACjB,SAAU,CACV,eACF,CACA,UACE,iBACF","file":"home-view.d32a4e4e.chunk.css","sourcesContent":[".welcome {\r\n  margin-left: 40px;\r\n  width: 30%;\r\n  min-width: 480px;\r\n}\r\n.homeView {\r\n  text-align: center;\r\n}\r\n"]}
